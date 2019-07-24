@@ -1,0 +1,25 @@
+{
+  "name": "stylingbasedonscrollpositiondemos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianadames/StylingBasedOnScrollPositionDemos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianadames/StylingBasedOnScrollPositionDemos/issues"
+  },
+  "homepage": "https://github.com/adrianadames/StylingBasedOnScrollPositionDemos#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
