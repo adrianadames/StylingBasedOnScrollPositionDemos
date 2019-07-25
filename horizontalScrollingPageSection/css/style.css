@@ -1,0 +1,7 @@
+* {
+    margin:0;
+}
+
+html, body {
+    height:100%;  /* can then tell other divs to be height 100% too*/
+}
