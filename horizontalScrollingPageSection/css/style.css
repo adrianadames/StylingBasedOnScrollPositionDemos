@@ -1,0 +1,30 @@
+* {
+    margin:0;
+}
+
+html, body {
+    height:100%;  /* can then tell other divs to be height 100% too*/
+}
+
+.wrapper {
+    height:100%;
+    background-color:gray;
+}
+
+.view {
+    height:100%;
+    background-color:lightgreen;
+}
+
+.surroundContainer {
+    height:100%;
+    overflow:auto;
+    white-space: nowrap;
+}
+
+.hPage {
+    display:inline-block;
+    height:100%;
+    width:100%;
+    background-color:blue;
+}
