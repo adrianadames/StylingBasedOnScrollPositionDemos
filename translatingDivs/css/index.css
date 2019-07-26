@@ -109,6 +109,7 @@ body {
 .view2 {
 	/* height:2175px; */
 	height:100%;
+	width:100%;
 	background-color:lightgreen;
 	border:10px solid green;
 	position: absolute;
@@ -142,7 +143,14 @@ body {
 	background-color:rgb(128, 223, 240);
 }
 
+.view1-measure {
+	border:1px solid yellow;
+}
 
+/* .view1-content-bounds {
+	height:2360px;
+	position: absolute;
+} */
 
 .view1-header1 {
 	/* width:1024px; */
@@ -162,10 +170,40 @@ body {
 	width:512px;
 	height:160px;
 	border:1px solid black;
-
 }
 
 .view1-header3 {
+	/* width:1024px; */
+	position: absolute;
+	width:512px;
+	height:160px;
+	border:1px solid black;
+}
+
+
+
+.view2-header1 {
+	/* width:1024px; */
+	position: absolute;
+	width:512px;
+	height:160px;
+	border:1px solid black;
+	left:50%;
+	top:50%;
+	margin-left:-512px;
+	margin-top:-80px;
+}
+
+.view2-header2 {
+	/* width:1024px; */
+	position: absolute;
+	width:512px;
+	height:160px;
+	border:1px solid black;
+
+}
+
+.view2-header3 {
 	/* width:1024px; */
 	position: absolute;
 	width:512px;
