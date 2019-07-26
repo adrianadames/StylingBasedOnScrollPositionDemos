@@ -48,3 +48,92 @@ table {
 }
 
 * {box-sizing: border-box}
+body {
+	height: 22731px;
+	min-width: 1024px;
+	/* overflow: hidden; */
+}
+
+
+.outer-container {
+	background-color:brown;
+	min-width: 1024px;
+	position: fixed;
+	overflow: hidden;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	
+}
+
+.inner-container {
+	background-color:purple;
+	position: absolute;
+	overflow: hidden;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+.views-container {
+	background-color:white;
+	position: absolute;
+	left:0;
+	height:100%;
+	width:100%;
+	border:3px solid red;
+}
+
+.view1 {
+	/* height: 2360px; */
+	height:100%;
+	width:100%;
+	border:3px solid greenyellow;
+	background-color:lightgray;
+	position: absolute;
+}
+
+.view2 {
+	/* height:2175px; */
+	height:100%;
+	background-color:lightgreen;
+}
+
+.view3 {
+	height:2970px;
+	background-color: lightseagreen;
+}
+
+.view4 {
+	height:9410px;
+	background-color: lightskyblue;
+}
+
+.view5 {
+	height:3200px;
+	background-color:lightcyan;
+}
+
+.view6 {
+	height:1565px;
+	background-color:lightcoral;
+}
+
+.view7 {
+	height:675px;
+	background-color:rgb(128, 223, 240);
+}
+
+
+
+.view1-header {
+	/* width:1024px; */
+	width:512px;
+	height:160px;
+	border:1px solid black;
+	font-size:22px;
+	margin-top:200px;
+	left:-150px;
+}
