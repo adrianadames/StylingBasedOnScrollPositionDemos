@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {box-sizing: border-box}
+body {
+	height: 22731px;
+	min-width: 1024px;
+	/* overflow: hidden; */
+}
+
+
+.outer-container {
+	background-color:brown;
+	min-width: 1024px;
+	position: fixed;
+	overflow: hidden;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	
+}
+
+.inner-container {
+	background-color:purple;
+	position: absolute;
+	overflow: hidden;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+}
+
+.views-container {
+	background-color:white;
+	position: absolute;
+	left:0;
+	height:100%;
+	width:100%;
+	border:3px solid red;
+}
+
+.view1 {
+	/* height: 2360px; */
+	height:100%;
+	width:100%;
+	border:3px solid greenyellow;
+	background-color:lightgray;
+	position: absolute;
+}
+
+.view2 {
+	/* height:2175px; */
+	height:100%;
+	background-color:lightgreen;
+}
+
+.view3 {
+	height:2970px;
+	background-color: lightseagreen;
+}
+
+.view4 {
+	height:9410px;
+	background-color: lightskyblue;
+}
+
+.view5 {
+	height:3200px;
+	background-color:lightcyan;
+}
+
+.view6 {
+	height:1565px;
+	background-color:lightcoral;
+}
+
+.view7 {
+	height:675px;
+	background-color:rgb(128, 223, 240);
+}
+
+
+
+.view1-header {
+	/* width:1024px; */
+	width:512px;
+	height:160px;
+	border:1px solid black;
+	font-size:22px;
+	margin-top:200px;
+	left:-150px;
+}
