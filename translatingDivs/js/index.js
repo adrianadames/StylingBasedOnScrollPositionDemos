@@ -10,11 +10,8 @@ let view6 = document.querySelector('.view6');
 let view7 = document.querySelector('.view7');
 
 
-let view1Measure = document.querySelector('.view1-measure');
+let view1Measure = document.querySelectorAll('.view1-measure');
 console.log('view1Measure: ', view1Measure);
-
-let view2Measure = document.querySelector('.view2-measure');
-console.log('view2Measure: ', view2Measure);
 
 let view1Header1 = document.querySelector('.view1-header1');
 console.log('view1Header1: ', view1Header1);
@@ -24,16 +21,6 @@ console.log('view1Header2: ', view1Header2);
 
 let view1Header3 = document.querySelector('.view1-header3');
 console.log('view1Header3: ', view1Header3);
-
-// let view1HeaderPosition = document.querySelector('.view1-header-position');
-// console.log('view1HeaderPosition: ', view1HeaderPosition);
-
-// view1Header.addEventListener('click', () => {
-//     console.log('beep')
-//     view1Header.style.transform = 'matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,250,0,0,1)';
-// })
-
-
 
 
 let scrollTop1 = window.pageYOffset;
@@ -59,27 +46,21 @@ let v6Height = 1565;
 let v7Height = 675;
 
 
-// let view1ContentBounds = document.querySelector('.view1-content-bounds');
-// console.log('view1ContentBounds: ', view1ContentBounds);
-
 window.addEventListener('scroll', () => {
     setTimeout(200)
-    console.log('beep')
 
-    view1Measure.textContent = 'View 1 Measure (window.pageYOffset: ' + window.pageYOffset +'px)';
-    view2Measure.textContent = 'View 2 Measure (window.pageYOffset: ' + window.pageYOffset +'px)';
-    
-    // view1ContentBounds.style.top = `${-window.pageYOffset}px`;
-    // view1Header1.style.transform = `matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-${window.pageYOffset},0,1)`;
+
+    for (let i = 0; i < view1Measure.length; i++) {
+        view1Measure[i].textContent = '(window.pageYOffset: ' + window.pageYOffset +'px)';
+    }
+
+
+
     view1Header1.style.transform =`translateY(${-window.pageYOffset}px)`;
-    // view1Header2.style.transform = `matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,${window.pageYOffset},0,0,1)`;
     view1Header2.style.transform =`translateX(${window.pageYOffset}px)`;
-    // view2.style.transform = `translateY(${2360-window.pageYOffset}) translateZ(0px)`;
-    // view2.style.transform = `matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,${2360-window.pageYOffset},0,1)`;
     
 
-    
-    
+
     if (window.pageYOffset <= v1Height) {
         view2.style.transform = `translateY(${v1Height-window.pageYOffset}px)`;
     }
@@ -97,6 +78,7 @@ window.addEventListener('scroll', () => {
     }
 
 
+
     if (window.pageYOffset <= v1Height + v2Height) {
         view3.style.transform = `translateY(${v1Height + v2Height-window.pageYOffset}px)`;
     }
@@ -109,10 +91,6 @@ window.addEventListener('scroll', () => {
         console.log('start scrolling view 2 up');
         view2.style.transform = `translateY(${amountBeforeView3Appears(vpHeight,v2Height)}px)`;
     } 
-    // else {
-    //     view2.style.top =0;
-    //     view2.style.transform = `translateY(0px)`;
-    // }
 
 
 
@@ -131,6 +109,7 @@ window.addEventListener('scroll', () => {
     }
 
 
+
     if (window.pageYOffset <= v1Height + v2Height+v3Height+v4Height) {
         view5.style.transform = `translateY(${v1Height + v2Height+v3Height+v4Height-window.pageYOffset}px)`;
         console.log(`view5 has translated up ${window.pageYOffset}`)
@@ -145,6 +124,7 @@ window.addEventListener('scroll', () => {
         
         view4.style.transform = `translateY(${amountBeforeView5Appears(vpHeight,v4Height)}px)`;
     }
+
 
 
     if (window.pageYOffset <= v1Height + v2Height+v3Height+v4Height+v5Height) {
@@ -173,14 +153,6 @@ window.addEventListener('scroll', () => {
         view6.style.transform = `translateY(${amountBeforeView7Appears(vpHeight,v6Height)}px)`;
     }
 })
-
-// window.addEventListener('wheel', () => {
-//     console.log('wheel')
-//     // view1HeaderPosition.textContent = 'window.pageYOffset: ' + window.pageYOffset;
-//     // view1Header.style.transform = `matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,${window.pageYOffset},0,0,1)`;
-//     view2.style.transform = `translateY(${2360-window.pageYOffset})`;
-//     console.log('view2.style.transform: ', `translateY(${2360-window.pageYOffset})`)
-// })
 
 
 

@@ -74,19 +74,19 @@ left properties are used to position the element. */
 	
 }
 
-/* An element with position: absolute; is positioned relative to the nearest positioned 
-ancestor (instead of positioned relative to the viewport, like fixed). */
-.inner-container {
+/* .inner-container {
 	background-color:purple;
 	/* border:10px solid blue; */
-	position: absolute;
-	overflow: hidden;
-	top:0;
-	left:0;
-	height:100%;
-	width:100%;
-}
+	/* position: absolute; */
+	/* overflow: hidden; */
+	/* top:0; */
+	/* left:0; */
+	/* height:100%; */
+	/* width:100%; */
+/* } */
 
+/* An element with position: absolute; is positioned relative to the nearest positioned 
+ancestor (instead of positioned relative to the viewport, like fixed). */
 .views-container {
 	background-color:white;
 	position: absolute;
@@ -175,6 +175,10 @@ ancestor (instead of positioned relative to the viewport, like fixed). */
 
 .view1-measure {
 	border:1px solid yellow;
+	display:inline-block;
+	position:absolute;
+	top:0;
+	right:0;
 }
 
 /* .view1-content-bounds {
