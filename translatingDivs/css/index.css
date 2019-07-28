@@ -58,7 +58,9 @@ body {
 	/* overflow: hidden;  */
 }
 
-/* An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. */
+/* An element with position: fixed; is positioned relative to the viewport, which means it 
+always stays in the same place even if the page is scrolled. The top, right, bottom, and 
+left properties are used to position the element. */
 .outer-container {
 	background-color:brown;
 	min-width: 1024px;
@@ -68,14 +70,15 @@ body {
 	left:0;
 	height:100%;
 	width:100%;
-	border:10px solid hotpink;
+	/* border:10px solid hotpink; */
 	
 }
 
-/* An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). */
+/* An element with position: absolute; is positioned relative to the nearest positioned 
+ancestor (instead of positioned relative to the viewport, like fixed). */
 .inner-container {
 	background-color:purple;
-	border:10px solid blue;
+	/* border:10px solid blue; */
 	position: absolute;
 	overflow: hidden;
 	top:0;
@@ -91,17 +94,18 @@ body {
 	top:0;
 	height:100%;
 	width:100%;
-	border:5px solid red;
+	/* border:5px solid red; */
 }
 
 .view1 {
 	/* height: 2360px; */
 	height:100%;
 	width:100%;
-	border:10px solid gray;
+	border:1px solid red;
 	background-color:lightgray;
 	position: absolute;
 	z-index: 8;
+	left:0;
 	top:0;
 
 }
@@ -111,36 +115,62 @@ body {
 	height:100%;
 	width:100%;
 	background-color:lightgreen;
-	border:10px solid green;
+	/* border:10px solid green; */
 	position: absolute;
 	z-index: 7;
+	left:0;
 	top:0;
 }
 
 .view3 {
-	height:2970px;
+	/* height:2970px; */
+	height:100%;
+	width:100%;
 	background-color: lightseagreen;
-	border:10px solid rgb(20, 110, 106);
+	/* border:10px solid rgb(20, 110, 106); */
+	position: absolute;
+	z-index: 6;
+	top:0;
 }
 
 .view4 {
-	height:9410px;
+	/* height:9410px; */
+	height:100%;
+	width:100%;
 	background-color: lightskyblue;
+	position: absolute;
+	z-index: 5;
+	top:0;
 }
 
 .view5 {
-	height:3200px;
-	background-color:lightcyan;
+	/* height:3200px; */
+	height:100%;
+	width:100%;
+	background-color:rgb(255, 242, 224);
+	position: absolute;
+	z-index: 4;
+	top:0;
 }
 
 .view6 {
-	height:1565px;
+	/* height:1565px; */
+	height:100%;
+	width:100%;
 	background-color:lightcoral;
+	position: absolute;
+	z-index: 3;
+	top:0;
 }
 
 .view7 {
-	height:675px;
+	/* height:675px; */
+	height:100%;
+	width:100%;
 	background-color:rgb(128, 223, 240);
+	position: absolute;
+	z-index: 2;
+	top:0;
 }
 
 .view1-measure {
@@ -190,8 +220,8 @@ body {
 	border:1px solid black;
 	left:50%;
 	top:50%;
-	margin-left:-512px;
-	margin-top:-80px;
+	/* margin-left:-512px;
+	margin-top:-80px; */
 }
 
 .view2-header2 {
@@ -210,4 +240,9 @@ body {
 	height:160px;
 	border:1px solid black;
 
+}
+
+.view2-measure {
+	border:1px solid yellow;
+	margin-top:550px
 }
