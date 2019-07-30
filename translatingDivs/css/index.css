@@ -74,16 +74,6 @@ left properties are used to position the element. */
 	
 }
 
-/* .inner-container {
-	background-color:purple;
-	/* border:10px solid blue; */
-	/* position: absolute; */
-	/* overflow: hidden; */
-	/* top:0; */
-	/* left:0; */
-	/* height:100%; */
-	/* width:100%; */
-/* } */
 
 /* An element with position: absolute; is positioned relative to the nearest positioned 
 ancestor (instead of positioned relative to the viewport, like fixed). */
@@ -181,10 +171,6 @@ ancestor (instead of positioned relative to the viewport, like fixed). */
 	right:0;
 }
 
-/* .view1-content-bounds {
-	height:2360px;
-	position: absolute;
-} */
 
 .view1-header1 {
 	/* width:1024px; */
