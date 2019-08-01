@@ -19,9 +19,7 @@ console.log('view1Header1: ', view1Header1);
 let view1Header2 = document.querySelector('.view1-header2');
 console.log('view1Header2: ', view1Header2);
 
-let view1Header3 = document.querySelector('.view1-header3');
-console.log('view1Header3: ', view1Header3);
-
+ 
 
 let scrollTop1 = window.pageYOffset;
 console.log('scrollTop1: ', scrollTop1);
@@ -45,9 +43,15 @@ let v5Height = 3200;
 let v6Height = 1565;
 let v7Height = 675;
 
+let view1Div1 = document.querySelector('.view1-div1');
+let view1Div2 = document.querySelector('.view1-div2');
+let view1Div3 = document.querySelector('.view1-div3');
+
+let view2Div1 = document.querySelector('.view2-div1');
+let view2Div2 = document.querySelector('.view2-div2');
 
 window.addEventListener('scroll', () => {
-    setTimeout(200)
+    setTimeout(200);
 
 
     for (let i = 0; i < view1Measure.length; i++) {
@@ -55,14 +59,37 @@ window.addEventListener('scroll', () => {
     }
 
 
-
-    view1Header1.style.transform =`translateY(${-window.pageYOffset}px)`;
-    view1Header2.style.transform =`translateX(${window.pageYOffset}px)`;
-    
-
-
     if (window.pageYOffset <= v1Height) {
         view2.style.transform = `translateY(${v1Height-window.pageYOffset}px)`;
+
+        view1Div1.style.transform = `translateY(${-window.pageYOffset}px)`;
+        view1Div1.style.opacity = `${1-window.pageYOffset/300}`;
+
+        view1Div2.style.transform =`translateX(${window.pageYOffset*2}px)`;
+        view1Div2.style.opacity = `${1-(window.pageYOffset-100)/(1.8*650)}`;
+
+
+        if (window.pageYOffset<661) {
+            view1Div3.style.transform = `translateY(${-window.pageYOffset*1.05*661/(947-325)}px)`;
+            view1Div3.style.opacity = `${(window.pageYOffset-91)/661}`;
+
+        }
+        // if (window.pageYOffset> 661 && window.pageYOffset< 890) {
+        //     view1Div3.style.transform = `translateY(0px)`;
+        // }
+        if (window.pageYOffset>890) {
+            // view1Div3.style.transform = `translateY(${-window.pageYOffset+(890-725)}px)`;
+            // view1Div3.style.transform = `translateY(${-window.pageYOffset+(890-725)}px)`;
+            // view1Div3.style.transform = `translateY(${-window.pageYOffset*1.05*661/(947-325)+(890-725)}px)`;
+            view1Div3.style.transform = `translateY(${-window.pageYOffset*1.1*661/(947-325)+(280)}px)`;
+            view1Div3.style.opacity = `${1-(window.pageYOffset-890)/1110*3.5}`;
+
+
+        }
+        220/(325)
+        
+        
+
     }
     if (window.pageYOffset >= v1Height && window.pageYOffset <= v1Height + v2Height) {
         view2.style.top =0;
@@ -86,6 +113,7 @@ window.addEventListener('scroll', () => {
         view3.style.top =0;
         view3.style.transform = `translateY(0px)`;
     }
+    
     console.log('amountBeforeView3Appears: ', amountBeforeView3Appears(vpHeight,v2Height));
     if (amountBeforeView3Appears(vpHeight,v2Height) <= 0) {
         console.log('start scrolling view 2 up');
